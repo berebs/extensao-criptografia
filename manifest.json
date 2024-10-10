@@ -7,9 +7,5 @@
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
-  "permissions": [],
-  "default_popup": {
-    "width": 400,  // Largura do popup
-    "height": 300  // Altura do popup
-  }
+  "permissions": []
 }
