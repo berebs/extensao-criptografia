@@ -4,7 +4,12 @@
   "version": "1.0",
   "description": "Uma extensão simples para criptografar frases com substituição de letras.",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
   },
-  "permissions": []
+  "permissions": [],
+  "default_popup": {
+    "width": 400,  // Largura do popup
+    "height": 300  // Altura do popup
+  }
 }
