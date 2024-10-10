@@ -2,7 +2,20 @@ document.getElementById('criptografar').addEventListener('click', function() {
     const frase = document.getElementById('frase').value;
     const resultado = criptografar(frase);
 
-    document.getElementById('resultado').innerText = `Frase criptografada: ${resultado.fraseCriptografada}\nNúmero usado para criptografia: ${resultado.numero}`;
+    const fraseCriptografada = `Frase criptografada: ${resultado.fraseCriptografada}\nNúmero usado para criptografia: ${resultado.numero}`;
+    document.getElementById('resultado').innerText = fraseCriptografada;
+
+    // Copiar automaticamente a frase criptografada para o clipboard
+    navigator.clipboard.writeText(resultado.fraseCriptografada).then(() => {
+        document.getElementById('copiedMessage').style.display = 'block';
+        
+        // Esconder a mensagem de "copiado" após 2 segundos
+        setTimeout(() => {
+            document.getElementById('copiedMessage').style.display = 'none';
+        }, 2000);
+    }).catch(err => {
+        console.error('Erro ao copiar para o clipboard: ', err);
+    });
 });
 
 function criptografar(frase) {
