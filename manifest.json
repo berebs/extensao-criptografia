@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Criptografia de Frases",
+  "version": "1.0",
+  "description": "Uma extensão simples para criptografar frases com substituição de letras.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}
