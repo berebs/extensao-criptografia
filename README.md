@@ -11,13 +11,13 @@ Extensão para Chrome que criptografa textos usando algoritmos modernos. Perfeit
 ## ✨ Funcionalidades
 - Criptografa textos com AES-256
 - Copia automaticamente o texto cifrado
-- Opção de senha secreta (ou usa a padrão: `xuxu-berebs`)
-- Ícone fofinho no navegador 🔐
+- Opção de senha secreta 
 
 ## 🚀 Como Instalar
 1. Clone o repositório:
 	```bash
 	git clone https://github.com/berebs/extensao-criptografia.git
+ 
 2.  No Chrome:
     
     -   Acesse  `chrome://extensions`
